@@ -1,0 +1,9 @@
+name: Your first Workflow
+on: [push]
+
+jobs: 
+  First_Job:
+    runs-on: ubuntu-latest
+    steps:
+      -  run: echo "Hello Farhan THis is your first workflow."
+      -  run: echo "WORKFLOW END"
