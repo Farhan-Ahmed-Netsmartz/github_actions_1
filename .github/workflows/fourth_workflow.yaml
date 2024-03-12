@@ -1,9 +1,10 @@
 name: Fourth Workflow
 run-name: First Run
-#on: [push]
+on: [push]
 
 jobs:
   First-job:
+    if: false  # This condition will never be true, so the workflow won't run
     runs-on: ubuntu-latest
     steps:
       -  run: echo "This is first job."
