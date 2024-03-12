@@ -11,5 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -  name: First Step
-      -  run: echo "THis is the example of WORKFLOW DISPATCH"
+         run: echo "This is the example of WORKFLOW DISPATCH"
       
