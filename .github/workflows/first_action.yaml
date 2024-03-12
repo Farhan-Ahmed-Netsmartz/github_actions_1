@@ -3,6 +3,7 @@ on: [push]
 
 jobs: 
   First_Job:
+    if: false  # This condition will never be true, so the workflow won't run
     runs-on: ubuntu-latest
     steps:
       -  run: echo "Hello Farhan THis is your first workflow."
