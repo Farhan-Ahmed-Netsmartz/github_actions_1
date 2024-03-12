@@ -14,6 +14,6 @@ jobs:
         run: |
           echo "new_variable=Farhan Ahmed" >> "$GITHUB_ENV"
       - name: Get variable value
-        run: echo $new_variable "|" ${{ new_variable }} "|" $env:new_variable
+        run: echo $new_variable "|" ${{ new_variable }} 
       - name: End Job
         run: echo "Ending job"
