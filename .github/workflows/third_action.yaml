@@ -1,6 +1,6 @@
 name: Third action
 run-name: THis is a run name
-on: [push]
+#on: [push]
 
 jobs: 
   First-job:
