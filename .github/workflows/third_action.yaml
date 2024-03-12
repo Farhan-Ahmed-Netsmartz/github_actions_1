@@ -1,0 +1,17 @@
+name: Third action
+run-name: THis is a run name
+on: [push]
+
+jobs: 
+  First-job:
+    runs-on: ubuntu-latest
+    steps:
+      -  run: echo "This is First-job step1"
+      -  run: echo "This job is running on ${{ runner.os }}"
+
+  Second-job:
+    runs-on: windows-latest
+    steps:
+      -  run: echo "THis is Second-job step1"
+      -  run: echo "This job is running on ${{ runner.os }}"
+      
