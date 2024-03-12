@@ -1,0 +1,14 @@
+name: Second Action
+on: [push]
+
+jobs:
+  First-job:
+    runs-on: ubuntu-latest
+    steps:
+      -  run: echo "Hello This is First-job."
+      -  run: echo "First-job end."
+  Second-job:
+    runs-on: ubuntu-latest
+    steps:
+      -  run:  echo "Hello This is Second-job."
+      -  run:  echo "Second-job end."
