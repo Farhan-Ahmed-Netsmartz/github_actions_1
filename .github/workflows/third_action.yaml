@@ -1,15 +1,17 @@
 name: Third action
 run-name: THis is a run name
-#on: [push]
+on: [push]
 
 jobs: 
   First-job:
+    if: false  # This condition will never be true, so the workflow won't run
     runs-on: ubuntu-latest
     steps:
       -  run: echo "This is First-job step1"
       -  run: echo "This job is running on ${{ runner.os }}"
 
   Second-job:
+    if: false  # This condition will never be true, so the workflow won't run
     runs-on: windows-latest
     steps:
       -  run: echo "THis is Second-job step1"
