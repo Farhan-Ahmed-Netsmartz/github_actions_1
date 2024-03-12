@@ -15,6 +15,9 @@ jobs:
           echo "new_variable=Farhan Ahmed" >> "$GITHUB_ENV"
           echo "The operating system on the runner is $env:RUNNER_OS."
       - name: Get variable value
-        run: echo "My name is $new_variable"
+        run: |
+          echo "My name is $new_variable"
+          echo "City: $CITY"
+          echo "Your name: $NAME"
       - name: End Job
         run: echo "Ending job"
