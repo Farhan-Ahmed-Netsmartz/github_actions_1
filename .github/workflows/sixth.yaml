@@ -17,7 +17,7 @@ jobs:
       - name: Get variable value
         run: |
           echo "My name is $new_variable"
-          echo "City: $CITY"
-          echo "Your name: $NAME"
+          echo "City: $vars.CITY"
+          echo "Your name: $vars.NAME"
       - name: End Job
         run: echo "Ending job"
