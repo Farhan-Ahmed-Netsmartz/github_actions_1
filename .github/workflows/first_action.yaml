@@ -1,5 +1,5 @@
 name: Your first Workflow
-#on: [push]
+on: [push]
 
 jobs: 
   First_Job:
