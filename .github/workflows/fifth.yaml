@@ -8,6 +8,7 @@ on:
 
 jobs:
   First_job:
+    if: false
     runs-on: ubuntu-latest
     steps:
       -  name: First Step
