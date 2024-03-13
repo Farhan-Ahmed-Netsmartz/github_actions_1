@@ -21,8 +21,9 @@ jobs:
           
       - name: Build and push to Docker Hub
         run: |
-          docker build -t ${{ env.username }}/${{ github.repository }}:${{ env.tag }} .
-          docker push ${{ env.username }}/${{ github.repository }}:${{ env.tag }}
+          docker build -t ${{ env.username }}/${{ env.repository }}:${{ env.tag }} .
+          docker push ${{ env.username }}/${{ env.repository }}:${{ env.tag }}
         env: 
           username: ${{ secrets.DOCKER_USERNAME }}
           tag: latest
+          repository: github-to-Docker-hub
