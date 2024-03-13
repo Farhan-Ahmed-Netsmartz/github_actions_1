@@ -26,4 +26,4 @@ jobs:
         env: 
           username: ${{ secrets.DOCKER_USERNAME }}
           tag: latest
-          repository: github-to-Docker-hub
+          repository: github-to-docker-hub
