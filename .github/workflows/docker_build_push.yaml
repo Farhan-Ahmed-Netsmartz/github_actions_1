@@ -28,5 +28,5 @@ jobs:
           docker push ${{ env.username }}/${{ env.repository }}:${{ env.tag }}
         env: 
           username: ${{ secrets.DOCKER_USERNAME }}
-          tag: 1.0.0
+          tag: latest
           repository: github-to-docker-hub
